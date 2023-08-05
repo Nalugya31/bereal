@@ -2,7 +2,7 @@
 <br></br>
 
 <div class = "container">
-<h1 class = "text-center">TOTAL SALES MADE</h1><br>
+<h1 class = "text-center" style="color: lightblue;">TOTAL SALES MADE</h1><br>
   <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -26,7 +26,7 @@
   <table class="table">
     <thead class="thead-dark">
       <tr>
-        <th scope="col">Customer name</th>
+        <th scope="col" >Customer name</th>
         <th scope="col">Item Bought</th>
         <th scope="col">Quantity</th>
         <th scope="col">Unit Price(UGX)</th>
@@ -38,7 +38,7 @@
     {% for sale in sales %}
     <tbody>
       <tr>    
-        <td>{{sale.issued_to | title}}</td>
+        <td style="color:#FB667A;">{{sale.issued_to | title}}</td>
         <td>{{sale.item | title}}</td>
         <td>{{sale.quantity}}</td>
         <td>UGX{{sale.unit_price}}</td>
