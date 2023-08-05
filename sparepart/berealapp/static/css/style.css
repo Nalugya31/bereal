@@ -1,0 +1,110 @@
+.julie{
+    background-image:url("../images/secondimage.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  } 
+  #vanz{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 60px;
+  
+  }
+  .back img{
+  display:flex;
+  width:200px;
+  border-radius: 10%;
+  
+  /* padding-top: 100px;
+  padding-bottom:100px; */
+  }
+  .welcome-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:auto;
+  }
+  #second{
+  padding-bottom: 100px; 
+  color: white;
+  font-size: 20px;
+  padding-top: 50px;
+  
+  }
+  .button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20%;/* Set the border-radius to half of the width/height */
+    background-color:#c71616; /* Add a background color */
+    color: white; /* Set the text color */
+    font-size: 16px;
+    border: 30px; /* Remove the default button border */
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #77b7f2;
+  }
+  
+  .button:active {
+    background-color: #59dbfe;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: #4CAF50;
+  }
+  .footer{
+    /* display:flex; */
+    padding-top: 200px;
+    }
+  
+    
+      .hanisha {
+        margin-left: auto;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .demi{
+      border: 0px;
+      border-radius: 20px;
+      background-color: red;
+      width:100px;
+      color: #333;
+  
+    }
+    .logo-img{
+      width:50px;
+      border-radius: 10%;
+  
+    }
+     h1 .mac{
+      text-align: center;
+    }

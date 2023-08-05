@@ -1,0 +1,108 @@
+.julie{
+    background-image:url("../images/secondimage.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  } 
+  .hanisha {
+    margin-left: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .demi{
+  border: 0px;
+  border-radius: 20px;
+  background-color: red;
+  width:100px;
+  color: #333;
+  
+  }
+  .button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20%;/* Set the border-radius to half of the width/height */
+    background-color:white; /* Add a background color */
+    color: white; /* Set the text color */
+    font-size: 16px;
+    border: 30px; /* Remove the default button border */
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #77b7f2;
+  }
+  
+  .button:active {
+    background-color: #59dbfe;
+  }
+  
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: #4CAF50;
+  }
+  .footer{
+    /* display:flex; */
+    padding-top: 150px;
+    }
+  
+    .submit {
+      cursor: pointer;
+        border-radius: 10px;
+        color: #fff;
+        background: linear-gradient(to right, gray, lightgray);
+        border: 0;
+        padding-left: 20px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 5%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+        width:100px;
+    }
+  
+    body {
+      /* background-color: #F3EBF6; */
+      font-family: 'Ubuntu', sans-serif;
+      color: #404040;
+  }
+  
+  form{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+  }
+
+label{
+  color: red;
+  margin-left: 30%;
+}

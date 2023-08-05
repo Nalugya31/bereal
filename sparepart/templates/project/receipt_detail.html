@@ -1,0 +1,47 @@
+{% extends 'project/base.html'%} {% block content%}
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center">ORDER SUMMARY</h1><br>
+                    <h2 class="lead" style="color:#FB667A;">Customer Name: {{receipt.issued_to | title}}</h2>
+                </div>
+                <div class="card-block">
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <td><strong>Item Name</strong></td>
+                                    <td class="text-xs-center"><strong>Item Quantity</strong></td>
+                                    <td class="text-xs-right"><strong>Total Bill(Ugx)</strong></td>
+                                    <td class="text-xs-right"><strong>Amount Paid(Ugx)</strong></td>
+                                    <td class="text-xs-right">
+                                        <strong>Total change(UgX)</strong>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="color: black;">{{receipt.item| title}}</td>
+                                    <td class="text-xs-center" style="color: black;">{{receipt.quantity }}</td>
+                                    <td class="text-xs-center" style="color: black;">Ug{{receipt.get_total | title}}
+                                    </td>
+                                    <td class="text-xs-right" style="color: black;">Ugx{{ receipt.amount_received }}
+                                    </td>
+                                    <td class="text-xs-right" style="color: black;">Ugx{{ receipt.get_change }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
