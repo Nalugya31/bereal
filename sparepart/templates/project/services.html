@@ -18,45 +18,53 @@
 <body>
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-        <div class="container-fluid">
-            <!-- Logo or Brand -->
-            <a class="navbar-brand" href="#"><img src="{% static 'images/spareparts.avif' %}" alt="logo" width="80"
-                    class="logo-img" /></a>
-            <!-- ... -->
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'index' %}" style="color: red;">Home
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'services' %}" style="color: red;">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'contactus' %}" style="color: red;">Contact us</a>
-                    </li>
-                    <!-- Add more navigation links here -->
-                </ul>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- Navbar content -->
 
-                <!-- Put item to the right corner -->
-                <div class="ml-auto">
-                    <!-- Add your item here -->
-                    <button class="demi">
-                        <a class="nav-link" href="/login" style="color:white;">Login</a>
-                    </button>
+        <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+            <div class="container-fluid">
+                <!-- Logo or Brand -->
+                <a class="navbar-brand" href="#"><img src="{% static 'images/spareparts.avif' %}" alt="logo"
+                        class="logo-img" /></a>
+                <!-- ... -->
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'index' %}" style="color:white;">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'services' %}" style="color:white;">Services</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contactus' %}" style="color: red;">Contact us</a>
+                        </li> -->
+                        <!-- Add more navigation links here -->
+                    </ul>
+
+                    <!-- Put item to the right corner -->
+
                 </div>
             </div>
-        </div>
+            <div class="ml-auto">
+                <!-- Add your item here -->
+                <button class="demi" style="margin-left: 900px;">
+                    <a class="nav-link" href="/login" style="color:black;">Login</a>
+                </button>
+            </div>
+        </nav>
+
     </nav>
     <!-- end of navbar -->
     <header>
         <h1>Be Real Motor Spare Parts Company</h1>
+        <p id="second">Your Tagline Lies here!</p>
     </header>
     <div id="mac">
         <p>Our services</p>
     </div>
+    
     <div class="services-container">
 
         <div class="service">
@@ -71,7 +79,7 @@
             </div>
         </div>
         <div class="service">
-            <img src="{% static 'images/mechanic.jpg' %}" alt="Expert Advice">
+            <img src="{% static 'images/mechanic.avif' %}" alt="Expert Advice">
             <div class="service-content">
                 <div class="service-title">Expert Advice</div>
                 <div class="service-description">
@@ -85,9 +93,9 @@
         <div class="service">
             <img src="{% static 'images/shipping.jpg' %}" alt="Worldwide Shipping">
             <div class="service-content">
-                <div class="service-title">Worldwide Shipping</div>
+                <div class="service-title">Countrywide Delivery</div>
                 <div class="service-description">
-                    No matter where you are, we offer worldwide shipping to ensure that you get your required spare
+                    No matter where you are, we offer countrywide delivery to ensure that you get your required spare
                     parts
                     delivered to your doorstep. We partner with reliable carriers to ensure safe and timely delivery.
                 </div>
@@ -104,7 +112,8 @@
                 <a href="https://twitter.com/your-handle" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.instagram.com/your-account/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            <footer class=" text-dark mb-5 p-5 text-center">
+            <footer class=" text-white mb-5 p-5 text-center">
+                <p>Designed by Nalugya Vanessa</p>
                 <p>&copy; 2023 BeRealMotors Spare Parts Company. All rights reserved.</p>
             </footer>
         </div>

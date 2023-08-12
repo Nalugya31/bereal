@@ -2,19 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+  
   }
   
   header {
-    background-color: #333;
-    color: #fff;
+    background-color: aliceblue;
+    color: black;
     padding: 10px;
     text-align: center;
   }
-  
+  .nav-link{
+    font-size: larger;
+  }
   .services-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #f5fdff;
   }
   
   .service {
@@ -82,11 +86,13 @@ body {
   }
   
   .demi {
-    border: 0px;
-    border-radius: 20px;
-    background-color: red;
+    background-color: white;
     width: 100px;
-    color: #333;
+    color: black;
+    border-radius: 8px;
+    border: 0px;
+    outline: 1px;
+  
   
   }
   
@@ -107,6 +113,20 @@ body {
   }
   #mac{
     text-align: center;
-    color: red;
+    color:black;
     font-size: 50px;
   }
+  .demi:hover {
+    background-color: aliceblue;
+    font-size: 35px;
+    border: 10px #343a40;
+    color: black;
+    font-size: large;
+  }
+
+  .footer{
+    /* display:flex; */
+    padding-top:60px;
+    background-color:  #343a40;
+    color: white;
+    }

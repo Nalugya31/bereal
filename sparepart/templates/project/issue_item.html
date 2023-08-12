@@ -1,19 +1,29 @@
-{% extends 'project/base.html' %} 
+{% extends 'project/base.html' %}
 {% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
-<br/>
-<div class="container">
+<br />
+<div class="back-container">
+
     <form method="POST" action="">
-        <h1 class="text-center" style="color: lightblue;">SALES FORM</h1>
-        <br/>
-        {% csrf_token %}
-        {{sales_form | crispy}}
+        <h1 class="text-center" style="color: black;">SALES FORM</h1>
+        <br />
+        <div class="card" style="opacity: 90%; background-color: aliceblue;width: 100%;margin-left: 40px;">
+            <div class="card-body">
 
-        <input type="submit" name="Submit" class="btn   btn-secondary btn" type="button"> <br>
+                {% csrf_token %}
+                {{sales_form | crispy}}
 
+
+                <button class="button" type="submit" onclick="onClick()">SELL</button> <br>
+                <!-- <input type="submit" name="Submit" class="btn   btn-outline-dark btn " style="color: lightblue;" type="button"> <br> -->
+            </div>
+        </div> 
 
     </form>
 
+
+</div>
+</div>
 </div>
 {% endblock %}

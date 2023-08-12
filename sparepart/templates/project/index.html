@@ -25,8 +25,10 @@
 
 
     <!-- navbar -->
-    <div class="julie">
 
+
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- Navbar content -->
 
         <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
             <div class="container-fluid">
@@ -37,64 +39,63 @@
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="{% url 'index' %}" style="color: red;">Home
+                            <a class="nav-link active" href="{% url 'index' %}" style="color:white;">Home
                                 <span class="visually-hidden">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'services' %}" style="color: red;">Services</a>
+                            <a class="nav-link" href="{% url 'services' %}" style="color:white;">Services</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="{% url 'contactus' %}" style="color: red;">Contact us</a>
-                        </li>
+                        </li> -->
                         <!-- Add more navigation links here -->
                     </ul>
 
                     <!-- Put item to the right corner -->
-                    <div class="ml-auto">
-                        <!-- Add your item here -->
-                        <button class="demi">
-                            <a class="nav-link" href="/login" style="color:white;">Login</a>
-                        </button>
-                    </div>
+
                 </div>
+            </div>
+            <div class="ml-auto">
+                <!-- Add your item here -->
+                <button class="demi" style="margin-left: 900px;">
+                    <a class="nav-link" href="/login" style="color:black;">Login</a>
+                </button>
             </div>
         </nav>
 
+    </nav>
+     <!-- end of navbar -->
+    <div class="julie">
+   
 
+        <div class="card" style="opacity:90%; background-color:
+         aliceblue; width: 87%; text-align: center; margin-left: 80px; 
+         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;">
+            <div class="card-body">
 
-        <!-- </nav> -->
-        <!-- end of navbar -->
-        <div class="welcome-container">
+                <div class="text-center">
+                    <div class="curved-container">
+                        <h3 id="vanz" class="thick-text" style="color:black;">BeRealMotors Spare Parts Company</h3>
+                        <strong>
+                            <p id="second" style="padding-top: 10px;">Your Tagline Lies here!</p>
+                        </strong>
+                    </div>
+                </div>
 
-            <i>
-                <h1 id="vanz" class="thick-text">BeRealMotors Spare Parts Company</h1>
-            </i>
-
-            <div class="back">
-                <img src="{% static 'images/spareparts.avif' %}">
             </div>
-            <strong>
-                <p id="second">We are excited to have you here! Welcome and enjoy the experience.</p>
-            </strong>
-            <!-- <div class="landing"> -->
-            <button class="button">Explore<a href="/login"></a></button>
-            <!-- </div> -->
         </div>
 
 
 
 
+        <div class="back" style="text-align: center;">
+            <img src="{% static 'images/engine.jpg' %}" style="width: 20%;">
+            <img src="{% static 'images/battery.jpg' %}"  style="width: 20%;">
+            <img src="{% static 'images/tire.jpg' %}" style="width: 20%;">
 
-
-
-
-
-
-
-
-
-        <!-- carousel -->
+        </div>
 
 
 
@@ -107,7 +108,8 @@
                     <a href="https://www.instagram.com/your-account/" target="_blank"><i
                             class="fab fa-instagram"></i></a>
                 </div>
-                <footer class=" mb-5 p-5 text-center" style="color: white;">
+                <footer class=" mb-5 p-3 text-center" style="color:white;">
+                    <p>Designed by Nalugya Vanessa</p>
                     <p>&copy; 2023 BeRealMotors Spare Parts Company. All rights reserved.</p>
                 </footer>
             </div>

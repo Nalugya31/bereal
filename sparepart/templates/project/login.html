@@ -6,9 +6,9 @@
 <head>
     <title>Login - BeRealMotors Spare Parts Company</title>
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap-5.2.3-dist/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 {% load bootstrap5 %}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
@@ -16,43 +16,44 @@
 
 </head>
 
-<body style="background-color:black;">
-    <!-- <div class="julie"> -->
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-        <div class="container-fluid">
-            <!-- Logo or Brand -->
-            <a class="navbar-brand" href="#"><img src="{% static 'images/spareparts.avif'%}" alt="logo"
-                    width="80" /></a>
-            <!-- ... -->
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'index' %}" style="color: red;">Home
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'services' %}" style="color: red;">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'contactus' %}" style="color: red;">Contact us</a>
-                    </li>
-                    <!-- Add more navigation links here -->
-                </ul>
+<body style="background-color: aliceblue;">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- Navbar content -->
 
-                <!-- Put item to the right corner -->
-                <!-- <div class="ml-auto"> -->
-                    <!-- Add your item here -->
-                    <!-- <button class="demi">
-                        <a class="nav-link" href="/login" style="color: white;">Login</a>
-                    </button> -->
+        <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+            <div class="container-fluid">
+                <!-- Logo or Brand -->
+                <a class="navbar-brand" href="#"><img src="{% static 'images/spareparts.avif' %}" alt="logo" width="50"
+                        class="logo-img" /></a>
+                <!-- ... -->
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'index' %}" style="color:white;">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'services' %}" style="color:white;">Services</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contactus' %}" style="color: red;">Contact us</a>
+                        </li> -->
+                        <!-- Add more navigation links here -->
+                    </ul>
+
+                    <!-- Put item to the right corner -->
+
                 </div>
             </div>
-        </div>
+        </nav>
+
     </nav>
     <!-- end of nav -->
 
-    <h1 style="margin-left: 500px;padding-bottom: 30px; color:white; " >Member Login!!</h1>
+   <h3 style="margin-left: 500px;padding-bottom: 5px; color:black; padding-top: 20px; " >  <span class="material-icons-outlined" style="font-size: 40px; margin-right: 20px; padding-bottom: 5px;">
+    perm_identity
+    </span>Member Login</h1>
     <br>
 
     {% block content %}
@@ -61,7 +62,7 @@
         {% csrf_token %}
         {{form | crispy}}
 <br>
-        <input type="submit" name="Submit" class="btn   btn-block submit"> <br>
+        <input type="submit" name="Submit" class="btn   btn-block submit btn btn-secondary" > <br>
     </form>
 
     {% endblock %}
@@ -77,7 +78,8 @@
                 <a href="https://www.instagram.com/your-account/" target="_blank"><i
                         class="fab fa-instagram"></i></a>
             </div>
-            <footer class=" mb-5 p-5 text-center" style="color: white;">
+            <footer class=" mb-5 p-3 text-center" style="color:white;">
+                <p>Designed by Nalugya Vanessa</p>
                 <p>&copy; 2023 BeRealMotors Spare Parts Company. All rights reserved.</p>
             </footer>
         </div>

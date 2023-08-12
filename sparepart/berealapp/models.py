@@ -1,9 +1,10 @@
 from django.db import models
 from django.utils import timezone
+from django.core.validators import MinValueValidator
 # Create your models here.
 
 class Category(models.Model):
-    name=models.CharField(max_length=50,null=False,blank=False)
+    name=models.CharField(max_length=50,null=False,blank=False,unique=True)
     def __str__(self):
         return self.name
 # defining a model for product
@@ -15,7 +16,7 @@ class Product(models.Model):
     item_name=models.CharField(max_length=50,null=False,blank=False)
     date_of_arrival = models.DateField(default=timezone.now)
     country_of_origin=models.CharField(max_length=50,null=False,blank=False)
-    total_quantity=models.IntegerField(default=0,null=False,blank=False)
+    total_quantity=models.IntegerField(default=0,null=False,blank=False,validators=[MinValueValidator(1)])
     issued_quantity=models.IntegerField(default=0,null=False,blank=False)
     received_quantity=models.IntegerField(default=0,null=False,blank=False)
     unit_price=models.IntegerField(default=0,null=False,blank=False)
