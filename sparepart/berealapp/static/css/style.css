@@ -16,20 +16,6 @@
     color: black;
     font-size: 60px;
   }
-  /* }
-  .back img{
-  display:flex;
-  flex-direction:column;
-  width:100px;
-  border-radius: 2px;
-  margin-left: 350px;
-  padding-top:0px;
-  margin-top:10px; */
-
-  
-  /* padding-top: 100px;
-  padding-bottom:100px; */
-  /* } */
   .back {
     display: flex; /* Use flexbox to create a horizontal layout */
     justify-content: center; /* Center the images horizontally */
@@ -40,17 +26,11 @@
     }
 
 .back img {
-    width: 20%; /* Ensure images don't exceed their container's width */
+    width:80%; /* Ensure images don't exceed their container's width */
     height: auto; /* Maintain image aspect ratio */
-    margin: 0 10px; /* Add some space between images */
+    margin: 0 5px; /* Add some space between images */
     border-radius: 50%;
 }
-
-
-
-
-
-
 
   .welcome-container{
   display: flex;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
 {% load bootstrap5 %}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
@@ -62,7 +63,7 @@
         {% csrf_token %}
         {{form | crispy}}
 <br>
-        <input type="submit" name="Submit" class="btn   btn-block submit btn btn-secondary" > <br>
+        <input type="submit" name="Submit" class="btn   btn-block submit" style="background-color: #343a40; color: aliceblue;" > <br>
     </form>
 
     {% endblock %}
