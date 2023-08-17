@@ -1,5 +1,4 @@
 .julie{
-    background-image:url("../images/secondimage.jpg");
     width: auto;
     height: auto;
     background-size: cover;
@@ -12,19 +11,33 @@
     top: 10px;
     right: 10px;
   }
-  .demi{
-  border: 0px;
-  border-radius: 20px;
-  background-color: red;
-  width:100px;
-  color: #333;
-  margin-right: 500px;
+  .demi {
+    background-color: white;
+    width: 100px;
+    color: black;
+    border-radius: 10px;
+    border: 0px;
+    outline: 1px;
+  
   
   }
+
+  .demi:hover {
+    background-color: aliceblue;
+    font-size: 35px;
+    border: 10px #343a40;
+    color: black;
+    font-size: large;
+  }
+
   .nav-link{
     font-size: larger;
   }
-  
+  .logo-img{
+    width:50px;
+    border-radius: 10%;
+
+  }
   
   .social-icons {
     display: flex;

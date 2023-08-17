@@ -2,8 +2,8 @@
 <br></br>
 
 <div class = "container">
-    <a href="{% url 'issue_item' product.id %}" class="hover-button" ><input type="submit" value="Sell Item" class="btn btn-secondary" btn type="button"/></a>
-    <a href="{% url 'add_to_stock' product.id %}"  class="hover-button"><input type= "submit" value="Add to Stock" class="btn btn-secondary btn" type="button"/></a>
+    <a href="{% url 'issue_item' product.id %}" class="hover-button" ><input type="submit" value="Sell Item" class="btn btn-dark" type="button"/></a>
+    <a href="{% url 'add_to_stock' product.id %}"  class="hover-button"><input type= "submit" value="Add to Stock" class="btn btn-dark" type="button"/></a>
 </div>
 
 <br></br>
@@ -12,7 +12,7 @@
     <thead class="thead-dark">
       <tr>
         <th scope="col" >Category</th>
-        <th scope="col">Item Name</th>
+        <th scope="col">Product Name</th>
         <th scope="col">Quantity</th>
         <th scope="col">Unit Price(UGX)</th>   
       </tr>

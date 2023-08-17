@@ -7,7 +7,6 @@
     <title>Login - BeRealMotors Spare Parts Company</title>
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
 {% load bootstrap5 %}
@@ -44,6 +43,14 @@
 
                 </div>
             </div>
+
+
+            <div class="ml-auto">
+                <!-- Add your item here -->
+                <button class="demi" style="margin-left: 900px;">
+                    <a class="nav-link" href="/admin" style="color:black;">Admin</a>
+                </button>
+            </div>
         </nav>
 
     </nav>
@@ -51,7 +58,7 @@
 
    <h3 style="margin-left: 500px;padding-bottom: 5px; color:black; padding-top: 20px; " >  <span class="material-icons-outlined" style="font-size: 40px; margin-right: 20px; padding-bottom: 5px;">
     perm_identity
-    </span>Member Login</h1>
+    </span>Member Login</h3>
     <br>
 
     {% block content %}
@@ -86,6 +93,5 @@
 
 
 </body>
-<script scr="{% static 'css/bootstrap-5.2.3-dist/js/bootstrap.min.js' %}"></script>
 
 </html>

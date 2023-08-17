@@ -86,7 +86,7 @@
   }
   
   .social-icons a:hover {
-    background-color: #4CAF50;
+    background-color:#FB667A;;
   }
   .footer{
     /* display:flex; */
@@ -124,6 +124,12 @@
     .card{
       border: 2px solid #333; /* Add a 2px solid border with color #333 */
       border-radius: 10px;
+      opacity:90%;
+      width: 87%;
+      text-align: center; 
+      margin-left: 80px; 
+      box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
     } 
 
     .demi:hover {
@@ -139,4 +145,5 @@
     .nav-link:hover{
       color:#FB667A;
     }
+
  

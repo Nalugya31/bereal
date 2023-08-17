@@ -16,8 +16,8 @@
                             <img src="{% static 'images/spareparts.avif' %}" alt="logo" width="100px" style="border-radius: 10px;"/>
                         </td>
                         <td style="text-align: right;">
-                            <h4 style="color: black;">Bereal Motors Spareparts Company, Kiseka</h4>
-                            <h4 style="color: black;">Kampala,Uganda.</h4>
+                            <h4 class="v" >Bereal Motors Spareparts Company, Kiseka</h4>
+                            <h4 class="v" >Kampala,Uganda.</h4>
                             <h5>Contact us: +256705021043</h5>
                         </td>
                     </tr>
@@ -35,8 +35,8 @@
                         <table class="table table-sm">
                             <thead >
                                 <tr>
-                                    <td><strong>Item Name</strong></td>
-                                    <td class="text-xs-center"><strong>Item Quantity</strong></td>
+                                    <td><strong>Product Name</strong></td>
+                                    <td class="text-xs-center"><strong>Product Quantity</strong></td>
                                     <td class="text-xs-right"><strong>Total Bill(Ugx)</strong></td>
                                     <td class="text-xs-right"><strong>Amount Paid(Ugx)</strong></td>
                                     <td class="text-xs-right">
@@ -45,21 +45,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td style="color: black;">{{receipt.item| title}}</td>
-                                    <td class="text-xs-center" style="color: black;">{{receipt.quantity }}</td>
-                                    <td class="text-xs-center" style="color: black;">Ug{{receipt.get_total | title}}
+                                <tr class="v">
+                                    <td>{{receipt.item| title}}</td>
+                                    <td class="text-xs-center" >{{receipt.quantity }}</td>
+                                    <td class="text-xs-center" >Ug{{receipt.get_total | title}}
                                     </td>
-                                    <td class="text-xs-right" style="color: black;">Ugx{{ receipt.amount_received }}
+                                    <td class="text-xs-right">Ugx{{ receipt.amount_received }}
                                     </td>
-                                    <td class="text-xs-right" style="color: black;">Ugx{{ receipt.get_change }}</td>
+                                    <td class="text-xs-right">Ugx{{ receipt.get_change }}</td>
                                 </tr>
                             </tbody>
                         </table>
                         
 
-                        <h5 class="text-center" style="padding-top: 20px; color: rgb(165, 162, 162);">Thank You For choosing BeRealMotors Spareparts Company</h5>
-                        <h6 class="text-center" style="padding-top: 20px; color: rgb(165, 162, 162);">Designed by Nalugya Vanessa</h6>
+                        <h5 class="text-center" id ="A">Thank You For choosing BeRealMotors Spareparts Company</h5>
+                        <h6 class="text-center" id="D">Designed by Nalugya Vanessa</h6>
                     </div>
                 </div>
             </div>

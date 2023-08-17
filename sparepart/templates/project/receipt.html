@@ -1,22 +1,22 @@
 {% extends 'project/base.html'%} {% block content%}
 <br /><br>
 <div class="container" style="background-color: aliceblue;">
-    <h1 class="card-header text-center" style="color: black;">ALL RECEIPTS</h1><br>
+    <h1 class="card-header text-center" class="v">ALL RECEIPTS</h1><br>
     {% for sale in sales %}
     <div class="card" style="opacity: 90%;" >
         <div class="card-body">
-            <h2 style="color: black;">BeReal Motors Spareparts Company,Kiseka</h2>
+            <h2 class="v">BeReal Motors Spareparts Company,Kiseka</h2>
             <h3 class="card-title" style="color:#FB667A; ">Customer : {{sale.issued_to | title}}</h3>
-            <h6 class="card-text">Item : {{sale.item}}</h6>
+            <h6 class="card-text">Product : {{sale.item}}</h6>
             <h6 class="card-text">Amount Paid: UGX{{ sale.amount_received }}</h6>
             <h6 class="card-text">Quantity: {{sale.quantity }}</h6>
             <h2>Total Price : UGX{{ sale.get_total }}</h2>
             <div style="flex: 1">
-                <h6 class="card-text">Change Collected: UGX{{ sale.get_change }}</h6>
-               <i><h5 style="text-align: center;">Thank You For choosing BeRealMotors Spareparts Company</h5></i>
+                <h6 class="card-text">Balance: UGX{{ sale.get_change }}</h6>
+               <h5 id="A" style="text-align: center;">Thank You For choosing BeRealMotors Spareparts Company</h5>
                 <a href="{% url 'receipt_detail' sale.id %}">
                    
-                    <button class="button" type="submit" onclick="onClick()" style="width:auto;">Final Receipt</button> <br>
+                    <button class="button" type="submit"style="width:auto;">Final Receipt</button> <br>
                 </a>
             </div>
         </div>

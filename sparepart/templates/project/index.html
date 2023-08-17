@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap-5.2.3-dist/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
     {% load bootstrap5 %}
@@ -16,18 +15,7 @@
 </head>
 
 <body>
-
-
-
-
-
-
-
-
-
     <!-- navbar -->
-
-
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <!-- Navbar content -->
 
@@ -63,19 +51,17 @@
         </nav>
 
     </nav>
-     <!-- end of navbar -->
-    <div class="julie">
-   
+    <!-- end of navbar -->
 
-        <div class="card" style="opacity:90%; background-color:
-         aliceblue; width: 87%; text-align: center; margin-left: 80px; 
-         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;">
+    <!-- beginning of card -->
+    <div class="julie">
+
+        <div class="card" style=" background-color:aliceblue;">
             <div class="card-body">
 
                 <div class="text-center">
                     <div class="curved-container">
-                        <h3 id="vanz" class="thick-text" style="color:black;">BeRealMotors Spare Parts Company</h3>
+                        <h3 id="vanz" class="thick-text">BeRealMotors Spare Parts Company</h3>
                         <strong>
                             <p id="second" style="padding-top: 10px;">Your Tagline Lies here!</p>
                         </strong>
@@ -85,19 +71,19 @@
             </div>
         </div>
 
+        <!-- end of card -->
 
-
-
+        <!-- main -->
         <div class="back" style="text-align: center;">
-         <a href="/login">   <img src="{% static 'images/engine.jpg' %}"> </a>
-         <a href="/login">    <img src="{% static 'images/battery.jpg' %}">  </a>
-        <a href="/login">    <img src="{% static 'images/tire.jpg' %}">  </a>
+            <a href="/login"> <img src="{% static 'images/engine.jpg' %}"> </a>
+            <a href="/login"> <img src="{% static 'images/battery.jpg' %}"> </a>
+            <a href="/login"> <img src="{% static 'images/tire.jpg' %}"> </a>
 
         </div>
 
+        <!-- end of main -->
 
-
-
+        <!--beginning of footer -->
         <strong>
             <div class="footer">
                 <div class="social-icons">
@@ -113,16 +99,10 @@
             </div>
         </strong>
 
-
+        <!-- end of footer -->
 
 
     </div>
-
-
-
-
-
-    <script scr="{% static 'css/bootstrap-5.2.3-dist/js/bootstrap.min.js' %}"></script>
 
 </body>
 

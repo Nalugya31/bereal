@@ -95,7 +95,7 @@ form {
 }
 
 .social-icons a:hover {
-  background-color: #4CAF50;
+  background-color:#FB667A;
 }
 
 
@@ -107,13 +107,6 @@ form {
   margin-top: 20px;
   }
 
-.project-h1 {
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1em;
-  text-align: center;
-  color: #4DC3FA;
-}
 
 .project-h2 {
   font-size: 1em;
@@ -125,27 +118,6 @@ form {
   color: #FB667A;
 }
 
-.project-h2 a {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #FB667A;
-  text-decoration: none;
-}
-
-.blue-text {
-  color: #185875;
-}
-
-.yellow-text {
-  color: #FFF842;
-}
-
-.project-container th .project-h1 {
-  font-weight: bold;
-  font-size: 1em;
-  text-align: left;
-  color: #185875;
-}
 
 .project-container td {
   font-weight: normal;
@@ -190,6 +162,7 @@ form {
 
 .project-container td:first-child {
   color: #FB667A;
+  
 }
 
 .project-container tr:hover {
@@ -199,18 +172,6 @@ form {
   box-shadow: 0 6px 6px -6px #0E1119;
 }
 
-/* .project-container td:hover {
-      background-color:rgb(244, 234, 220);
-      color: #403E10;
-      font-weight: bold;
-      box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
-      transform: translate3d(6px, -6px, 0);
-      transition-delay: 0s;
-      transition-duration: 0.4s;
-      transition-property: all;
-      transition-timing-function: line;
-    }
-     */
 @media (max-width: 800px) {
 
   .project-container td:nth-child(4),
@@ -235,7 +196,7 @@ form {
   background-color: lightblue;
   color: #403E10;
   font-weight: bold;
-  box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  box-shadow:lightblue -1px 1px, lightblue -2px 2px, lightblue -3px 3px, lightblue -4px 4px, lightblue -5px 5px, lightblue -6px 6px;
   transform: translate3d(6px, -6px, 0);
   transition-delay: 0s;
   transition-duration: 0.4s;
@@ -246,7 +207,7 @@ form {
 /* ... Rest of the CSS code ... */
 .button {
   font-family: "Arial", sans-serif;
-  background-color: lightblue;
+  background-color: rgb(195, 228, 239);
   border: 10px lightblue;
   color: navyblue;
   font-size: 30px;
@@ -261,13 +222,6 @@ form {
   font-size: medium;
 }
 
-.button:visited {
-  background-image: none;
-  background-color: red;
-  font-size: 35px;
-  border: 10px dashed black;
-  color: black;
-}
 
 .button:hover {
   background-image: none;
@@ -333,12 +287,55 @@ form {
   /* Adjust this margin as needed */
 }
 
-/* .back-container {
-  background-color: aliceblue;
-} */
 
 #id_item_name {
   color: black;
 }
 
 
+/* Apply this CSS to your table element */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px; /* Add margin to the table */
+}
+
+/* Apply styles to table header cells */
+.table th {
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Apply styles to table data cells */
+.table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Apply alternate background color to table rows */
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Center the content of table header and data cells */
+.table th,
+.table td {
+  text-align: center;
+}
+
+
+
+.v {
+  color:black;
+
+}
+#A{
+  padding-top: 20px; 
+  color: rgb(165, 162, 162);
+}
+#D{
+  padding-top: 20px; 
+  color: rgb(165, 162, 162);
+}
