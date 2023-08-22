@@ -85,9 +85,9 @@ body {
     border-radius: 10%;
   }
   
-  .demi {
+  #demi {
     background-color: white;
-    width: 100px;
+    width: 80px;
     color: black;
     border-radius: 8px;
     border: 0px;
@@ -116,7 +116,7 @@ body {
     color:black;
     font-size: 50px;
   }
-  .demi:hover {
+  #demi:hover {
     background-color: aliceblue;
     font-size: 35px;
     border: 10px #343a40;
@@ -127,6 +127,20 @@ body {
   .footer{
     /* display:flex; */
     padding-top:60px;
-    background-color:  #343a40;
+    background-color: #121314;
     color: white;
+    }
+
+    #t{
+      color:white;
+    }
+    #t:hover{
+      color:#FB667A;
+    }
+
+    #tt:hover{
+      color: #FB667A;
+    }
+    #tt{
+      color:white;
     }

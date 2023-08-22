@@ -9,7 +9,7 @@ from .filters import *
 # a  decorator is an arrangement where you just reference a function but you dont call it.
 from django.contrib.auth.decorators import login_required
 
-#rrr
+#it hepls us while we are redirecting because it figures out the url we are redirecting to.
 from django.urls import reverse
 
 # this view renders the index.html template and this displays the landing pages of my web appliation.
@@ -30,16 +30,28 @@ def contactus(request):
 # line 39 fetches all the data from `the database using product model.`
 # line 40 filters the products and provides us with data based on user input.
 
-@login_required
-def home(request):
+# @login_required
+
 # querying our database and telling it to order items by id but it can be anything eg name
 # line 29 fetches all the data from `the database using product model.`
 # line 30 filters the products and provides us with data based on user input.
-    products=Product.objects.all().order_by('-id')
-    product_filters=ProductFilter(request.GET,queryset=products)
-    products=product_filters.qs
-# returning our searched data/ rendering our home.html page.
-    return render(request,'project/home.html',{'products':products,'product_filters':product_filters})
+
+from django.contrib.postgres.search import SearchQuery, SearchVector
+
+@login_required
+def home(request):
+    query = request.GET.get('q')
+
+    products = Product.objects.all().order_by('-id')
+
+    if query:
+        products = products.annotate(search=SearchVector('product_name')).filter(search=query)
+
+    product_filters = ProductFilter(request.GET, queryset=products)
+    products = product_filters.qs
+
+    return render(request, 'project/home.html', {'products': products, 'product_filters': product_filters})
+
 
 
 # This view fetches specific product from the database based on the product id parameter
@@ -79,7 +91,7 @@ def issue_item(request,pk):
             issued_item.total_quantity-=issued_quantity
             issued_item.save()
 
-            print(issued_item.item_name)
+            print(issued_item.product_name)
             print(request.POST['quantity'])
             print(issued_item.total_quantity)
 

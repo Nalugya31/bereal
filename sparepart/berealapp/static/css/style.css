@@ -91,7 +91,7 @@
   .footer{
     /* display:flex; */
     padding-top:60px;
-    background-color:  #343a40;
+    background-color:  #121314;
     color: white;
     }
   
@@ -102,9 +102,9 @@
         top: 10px;
         right: 10px;
     }
-    .demi {
+    #demi {
       background-color: white;
-      width: 100px;
+      width: 80px;
       color: black;
       border-radius: 10px;
       border: 0px;
@@ -132,7 +132,7 @@
       border-radius: 10px;
     } 
 
-    .demi:hover {
+    #demi:hover {
       background-color: aliceblue;
       font-size: 35px;
       border: 10px #343a40;
@@ -146,4 +146,16 @@
       color:#FB667A;
     }
 
- 
+    #t{
+      color:white;
+    }
+    #t:hover{
+      color:#FB667A;
+    }
+
+    #tt:hover{
+      color: #FB667A;
+    }
+    #tt{
+      color:white;
+    }

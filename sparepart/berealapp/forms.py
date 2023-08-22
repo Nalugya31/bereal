@@ -11,4 +11,4 @@ class AddForm(ModelForm):
 class SaleForm(ModelForm):
     class Meta:
         model=Sale
-        fields=[ 'part_name','quantity', 'amount_received','issued_to', 'contact','branch_name']
+        fields=['quantity', 'amount_received','issued_to', 'contact','branch_name','date_of_sale']

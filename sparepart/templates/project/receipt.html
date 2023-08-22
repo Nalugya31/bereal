@@ -7,16 +7,16 @@
         <div class="card-body">
             <h2 class="v">BeReal Motors Spareparts Company,Kiseka</h2>
             <h3 class="card-title" style="color:#FB667A; ">Customer : {{sale.issued_to | title}}</h3>
-            <h6 class="card-text">Product : {{sale.item}}</h6>
+            <h6 class="card-text">Product Name : {{sale.item}}</h6>
             <h6 class="card-text">Amount Paid: UGX{{ sale.amount_received }}</h6>
             <h6 class="card-text">Quantity: {{sale.quantity }}</h6>
             <h2>Total Price : UGX{{ sale.get_total }}</h2>
             <div style="flex: 1">
-                <h6 class="card-text">Balance: UGX{{ sale.get_change }}</h6>
+                <h6 class="card-text">Amount Due: UGX{{ sale.get_change }}</h6>
                <h5 id="A" style="text-align: center;">Thank You For choosing BeRealMotors Spareparts Company</h5>
                 <a href="{% url 'receipt_detail' sale.id %}">
                    
-                    <button class="button" type="submit"style="width:auto;">Final Receipt</button> <br>
+                    <button class="button" type="submit"style="width:auto;">Print Receipt</button> <br>
                 </a>
             </div>
         </div>

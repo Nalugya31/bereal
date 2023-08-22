@@ -13,7 +13,7 @@ class Product(models.Model):
     # here the foriegn key is name.
     # on_delete cascade deletes the category and the products related.
     Category_name=models.ForeignKey(Category, on_delete=models.CASCADE,null=False,blank=False)
-    item_name=models.CharField(max_length=50,null=False,blank=False)
+    product_name=models.CharField(max_length=50,null=False,blank=False)
     date_of_arrival = models.DateField(default=timezone.now)
     country_of_origin=models.CharField(max_length=50,null=False,blank=False)
     total_quantity=models.IntegerField(default=0,null=False,blank=False,validators=[MinValueValidator(1)])
@@ -23,7 +23,7 @@ class Product(models.Model):
 
 
     def __str__(self):
-        return self.item_name
+        return self.product_name
 
 #defining a model for sales
   
@@ -35,7 +35,7 @@ class Sale(models.Model):
     quantity=models.IntegerField(default=0,null=False, blank=False)
     amount_received = models.IntegerField(default=0,null=False, blank=False)
     issued_to=models.CharField(max_length=100,null=False, blank=False)#buyer
-    part_name=models.CharField(max_length=50,null=False, blank=False)
+    part_name=models.CharField(max_length=50,null=False, blank=True)
     unit_price=models.IntegerField(default=0,null=False, blank=False)#for installments.
     
     # the sales made so far(total)
@@ -49,7 +49,7 @@ class Sale(models.Model):
         return abs(int(change))
     
     def __str__(self):
-        return self.item.item_name # sales is linked to products.
+        return self.item.product_name # sales is linked to products.
 
 
 

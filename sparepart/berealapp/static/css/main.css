@@ -2,7 +2,6 @@ html,
 body {
   position: relative;
   overflow-x: hidden;
-  /* background:  url('/static/images/img6.jpg'); */
   width: 100% !important;
   height: 100vh;
   display: table;
@@ -18,10 +17,10 @@ body {
 }
 
 body {
-  /* background-color: hsl(0, 0%, 98%); */
+ 
   font-family: 'raleway';
   color: black;
-  /* background-color:aliceblue; */
+ 
 }
 
 tbody {
@@ -35,7 +34,7 @@ form {
 }
 
 .navbar {
-  /* background-color:hsl(216, 25%, 90%); */
+ 
   background-color: #343a40;
   color: white;
 }
@@ -102,7 +101,7 @@ form {
 .footer{
   /* display:flex; */
   padding-top:50px;
-  background-color:  #343a40;
+  background-color: #121314;
   color: white;
   margin-top: 20px;
   }
@@ -234,7 +233,7 @@ form {
 
 .demi {
   background-color: white;
-  width: 100px;
+  width: 90px;
   color: black;
   border-radius: 8px;
   border: 0px;
@@ -338,4 +337,22 @@ form {
 #D{
   padding-top: 20px; 
   color: rgb(165, 162, 162);
+}
+#t{
+  color:white;
+}
+#t:hover{
+  color:#FB667A;
+}
+#tt:hover{
+  color: #FB667A;
+}
+#tt{
+  color:white;
+}
+#ttt{
+  color:white;
+}
+#ttt:hover{
+color:#FB667A;
 }
