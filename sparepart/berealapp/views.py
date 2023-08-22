@@ -24,17 +24,9 @@ def services(request):
 def contactus(request):
     return render(request,'project/contactus.html')
 
-
-
 # querying our database and telling it to order items by id but it can be anything eg name
-# line 39 fetches all the data from `the database using product model.`
-# line 40 filters the products and provides us with data based on user input.
-
-# @login_required
-
-# querying our database and telling it to order items by id but it can be anything eg name
-# line 29 fetches all the data from `the database using product model.`
-# line 30 filters the products and provides us with data based on user input.
+# line 45 fetches all the data from `the database using product model.`
+# line 50 filters the products and provides us with data based on user input.
 
 from django.contrib.postgres.search import SearchQuery, SearchVector
 

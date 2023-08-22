@@ -3,7 +3,9 @@
 <div class="project-container">
     <div class="container">
 
-        <h1 class="text-center" style="color: #050a0b;">Search for Products</h1>
+        <div class="card-header" style="width:50%;margin: 0 auto; background-color: white;">
+            <h1 class="text-center" style="color: #050a0b;">Search for Products</h1>
+        </div>
 
         <br>
         <div class="card" style="width: 70%; height: 80px; margin-left: 150px;">
@@ -19,40 +21,43 @@
         <br>
 
         <div class="table-container">
-            <h1 class="text-center" style="color: rgb(5, 10, 11); padding-top: 20px;">PRODUCTS IN STOCK</h1>
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col" class="project-h1">Category</th>
-                        <th scope="col" class="project-h1">Product Number</th>
-                        <th scope="col" class="project-h1">Product Name</th>
-                        <th scope="col" class="project-h1">Country Of Origin</th>
-                        <th scope="col" class="project-h1">Quantity</th>
-                        <th scope="col" class="project-h1">Unit Price(UGX)</th>
-                        <th scope="col" class="project-h1">Detail</th>
-                    </tr>
-                </thead>
-                {% for product in products %}
-                <tbody>
-                    <tr>
-                        <td>{{product.Category_name}}</td>
-                        <td>{{product.id}}</td>
-                        <td>{{product.product_name}}</td>
-                        <td>{{product.country_of_origin}}</td>
-                        <td>{{product.total_quantity}}</td>
-                        <td>UGX{{product.unit_price}}</td>
-                        <!-- here we are hadling the buy item link n its handled by product_detail view -->
-                        <td><a href="{% url 'product_detail' product.id %}"><input type="submit" value="SELL ITEM"
-                                    class="btn btn-dark btn" type="button" /></a></td>
-
-
-
-
-                    </tr>
-                </tbody>
-                {% endfor %}
-            </table>
+            <div class="card-header" style="width:80%; margin: 0 auto; background-color:white;">
+                <h1 class="text-center" style="color: rgb(5, 10, 11); padding-top: 20px;">PRODUCTS IN STOCK</h1>
+            </div>
         </div>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="project-h1">Category</th>
+                    <th scope="col" class="project-h1">Product Number</th>
+                    <th scope="col" class="project-h1">Product Name</th>
+                    <th scope="col" class="project-h1">Country Of Origin</th>
+                    <th scope="col" class="project-h1">Quantity</th>
+                    <th scope="col" class="project-h1">Unit Price(UGX)</th>
+                    <th scope="col" class="project-h1">Detail</th>
+                </tr>
+            </thead>
+            {% for product in products %}
+            <tbody>
+                <tr>
+                    <td>{{product.Category_name}}</td>
+                    <td>{{product.id}}</td>
+                    <td>{{product.product_name}}</td>
+                    <td>{{product.country_of_origin}}</td>
+                    <td>{{product.total_quantity}}</td>
+                    <td>UGX{{product.unit_price}}</td>
+                    <!-- here we are hadling the buy item link n its handled by product_detail view -->
+                    <td><a href="{% url 'product_detail' product.id %}"><input type="submit" value="SELL ITEM"
+                                class="btn btn-dark btn" type="button" /></a></td>
+
+
+
+
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
     </div>
+</div>
 </div>
 {% endblock %}

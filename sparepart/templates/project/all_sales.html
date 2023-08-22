@@ -1,8 +1,11 @@
 {% extends 'project/base.html'%} {% block content%}
 <br></br>
 
-<div class = "container">
-<h1 class = "text-center" style="color: black;">TOTAL SALES MADE</h1><br>
+<div class="container">
+  <div class="card-header" style="background-color: white; width:40%;">
+    <h1 class="text-center" style="color: black;">TOTAL SALES MADE</h1>
+  </div><br>
+
   <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -10,9 +13,9 @@
         <th scope="col">Total Debts Issued</th>
         <th scope="col">Net Amount</th>
       </tr>
-    </thead>  
+    </thead>
     <tbody>
-      <tr>    
+      <tr>
         <td>UGX{{total}}</td>
         <td>UGX{{change}}</td>
         <td>UGX{{net}}</td>
@@ -22,11 +25,11 @@
 </div>
 <br></br>
 
-<div class = "container">
+<div class="container">
   <table class="table">
     <thead class="thead-dark">
       <tr>
-        <th scope="col" >Customer name</th>
+        <th scope="col">Customer name</th>
         <th scope="col">Product Bought</th>
         <th scope="col">Quantity</th>
         <th scope="col">Unit Price(UGX)</th>
@@ -37,7 +40,7 @@
     </thead>
     {% for sale in sales %}
     <tbody>
-      <tr>    
+      <tr>
         <td style="color:#FB667A;">{{sale.issued_to | title}}</td>
         <td>{{sale.item | title}}</td>
         <td>{{sale.quantity}}</td>

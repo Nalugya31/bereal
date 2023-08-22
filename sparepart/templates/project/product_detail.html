@@ -7,11 +7,16 @@
 </div>
 
 <br></br>
+<div class="card-header" style="background-color: white;" >
+  <h2>Product Detail</h2>
+</div>
 <div class = "container">
+
   <table class="table">
     <thead class="thead-dark">
       <tr>
         <th scope="col" >Category</th>
+        <th scope="col">Product Number</th>
         <th scope="col">Product Name</th>
         <th scope="col">Country Of Origin</th>
         <th scope="col">Quantity</th>
@@ -21,6 +26,7 @@
     <tbody>
       <tr>    
         <td style="color:#FB667A;">{{product.Category_name}}</td>
+        <td>{{product.id}}</td>
         <td>{{product.product_name}}</td>
         <td>{{product.country_of_origin}}</td>
         <td>{{product.total_quantity}}</td>
