@@ -21,13 +21,15 @@
                             <h4 class="v" >Kampala,Uganda.</h4>
                             <h5>Contact us: +256705021043</h5>
                             <h5>Date:{{receipt.date_of_sale}}</h5>
+                            <h6 style="padding-top: 20px;">BRM-RECEIPT-0{{receipt.id}}</h6>
                            
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align: left; padding-top: 30px;">
-                            <h2 style="color: lightslategray;">Bill To</h2>
-                            <h2 style="color:#FB667A;">Customer Name: {{receipt.issued_to | title}}</h2>
+                            <h4 style="color: lightslategray;">Bill To</h4>
+                            <h3 style="color:#FB667A;">Customer Name: {{receipt.issued_to | title}}</h3>
+                            <h5 style="color: black;">Contact: {{receipt.contact}}</h5>
                         </td>
                     </tr>
                 </table>
