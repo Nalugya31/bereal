@@ -36,7 +36,7 @@ form {
 .navbar {
  
   background-color: #343a40;
-  color: white;
+  color: aliceblue;
 }
 
 .navbar li a :hover {
@@ -50,11 +50,11 @@ form {
 }
 
 .nav-link {
-  color: white;
+  color:  #FB667A;
   text-transform: capitalize;
 }
 .nav-link:hover{
-  color: #FB667A;
+  color:aliceblue;
 }
 .navbar-brand {
   font-size: 30px !important;
@@ -342,7 +342,7 @@ form {
   color: rgb(165, 162, 162);
 }
 #t{
-  color:white;
+  color:aliceblue;
 }
 #t:hover{
   color:#FB667A;
@@ -351,10 +351,10 @@ form {
   color: #FB667A;
 }
 #tt{
-  color:white;
+  color:aliceblue;
 }
 #ttt{
-  color:white;
+  color:aliceblue;
 }
 #ttt:hover{
 color:#FB667A;
@@ -374,3 +374,8 @@ color:#FB667A;
 
 
 } 
+
+.receipt-container {
+  overflow-x: hidden;
+  max-width: 100vw;
+}

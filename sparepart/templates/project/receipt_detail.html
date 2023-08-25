@@ -1,4 +1,4 @@
-{% extends 'project/base.html'%} 
+{% extends 'project/base.html'%}
 {% load static%}
 {% block content%}
 <br />
@@ -6,71 +6,73 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="card">
+            <div class="card" style="background-color: white;">
 
 
-                <div class="card-header" style="width:100%;">
-                <table style="width: 100%; border-collapse: collapse;">
-                    <tr>
-                        <td style="vertical-align: top;">
-                            <img src="{% static 'images/spareparts.avif' %}" alt="logo" width="100px" style="border-radius: 10px;"/>
-                        </td>
-                        <td style="text-align: right;">
-                            
-                            <h4 class="v" >Bereal Motors Spareparts Company, Kiseka</h4>
-                            <h4 class="v" >Kampala,Uganda.</h4>
-                            <h5>Contact us: +256705021043</h5>
-                            <h5>Date:{{receipt.date_of_sale}}</h5>
-                            <h6 style="padding-top: 20px;">BRM-RECEIPT-0{{receipt.id}}</h6>
-                           
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align: left; padding-top: 30px;">
-                            <h4 style="color: lightslategray;">Bill To</h4>
-                            <h3 style="color:#FB667A;">Customer Name: {{receipt.issued_to | title}}</h3>
-                            <h5 style="color: black;">Contact: {{receipt.contact}}</h5>
-                        </td>
-                    </tr>
-                </table>
+                <div class="card-header" style="width:95%;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <img src="{% static 'images/spareparts.avif' %}" alt="logo" width="100px"
+                                    style="border-radius: 10px;" />
+                            </td>
+                            <td style="text-align: right;">
 
-            </div>
-                <div class="card-block">
-                    <div class="table-responsive">
-                        <table class="table table-sm">
-                            <thead >
-                                <tr>
-                                    <td><strong style="color:black;">Product Name</strong></td>
-                                    <td class="text-xs-center"><strong>Product Quantity</strong></td>
-                                    <td class="text-xs-right"><strong>Total Bill(Ugx)</strong></td>
-                                    <td class="text-xs-right"><strong>Amount Paid(Ugx)</strong></td>
-                                    <td class="text-xs-right">
-                                        <strong>Amount Due(UgX)</strong>
-                                    </td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="v">
-                                    <td>{{receipt.item| title}}</td>
-                                    <td class="text-xs-center" >{{receipt.quantity }}</td>
-                                    <td class="text-xs-center" >Ugx{{receipt.get_total | title}}
-                                    </td>
-                                    <td class="text-xs-right">Ugx{{ receipt.amount_received }}
-                                    </td>
-                                    <td class="text-xs-right">Ugx{{ receipt.get_change }}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        
+                                <h4 class="v">Bereal Motors Spareparts Company, Kiseka</h4>
+                                <h4 class="v">Kampala,Uganda.</h4>
+                                <h5>Contact us: +256705021043</h5>
+                                <h5>Date:{{receipt.date_of_sale}}</h5>
+                                <h6 style="padding-top: 20px;">BRM-RECEIPT-0{{receipt.id}}</h6>
 
-                        <h5 class="text-center" id ="A">Thank You For choosing BeRealMotors Spareparts Company</h5>
-                        <!-- <h6 class="text-center" id="D">Designed by Nalugya Vanessa</h6> -->
-                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: left; padding-top: 30px; padding-left: 10px;">
+                                <h4 style="color: lightslategray;">Bill To</h4>
+                                <h3 style="color:#FB667A;">Customer Name: {{receipt.issued_to | title}}</h3>
+                                <h5 style="color: black;">Contact: {{receipt.contact}}</h5>
+                            </td>
+                        </tr>
+                    </table>
+
                 </div>
+
+                <div class="card-block" style="width: 96%;">
+                    <!-- <div class="table-responsive"> -->
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <td><strong style="color:black;">Product Name</strong></td>
+                                <td class="text-xs-center"><strong>Product Quantity</strong></td>
+                                <td class="text-xs-right"><strong>Total Bill(Ugx)</strong></td>
+                                <td class="text-xs-right"><strong>Amount Paid(Ugx)</strong></td>
+                                <td class="text-xs-right">
+                                    <strong>Amount Due(UgX)</strong>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="v">
+                                <td>{{receipt.item| title}}</td>
+                                <td class="text-xs-center">{{receipt.quantity }}</td>
+                                <td class="text-xs-center">Ugx{{receipt.get_total | title}}
+                                </td>
+                                <td class="text-xs-right">Ugx{{ receipt.amount_received }}
+                                </td>
+                                <td class="text-xs-right">Ugx{{ receipt.get_change }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h5 class="text-center" id="A">Thank You For choosing BeRealMotors Spareparts Company</h5>
+                    <!-- <h6 class="text-center" id="D">Designed by Nalugya Vanessa</h6> -->
+                     <!-- </div> -->
+                </div>
+
             </div>
         </div>
     </div>
 </div>
-
 
 {% endblock %}
