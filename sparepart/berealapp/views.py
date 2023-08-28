@@ -16,13 +16,7 @@ from django.urls import reverse
 def index(request):
     return render(request,'project/index.html')
 
-# this view renders the servises.html template and this diplays the services we offered by be real motors.
-def services(request):
-    return render(request,'project/services.html')
 
-# this view renders the contactus.html template and this diplays informtion of how you get in touch with be real motors.
-def contactus(request):
-    return render(request,'project/contactus.html')
 
 # querying our database and telling it to order items by id but it can be anything eg name
 # line 45 fetches all the data from `the database using product model.`

@@ -9,8 +9,7 @@ from berealapp import views
 urlpatterns =[
   #  path('index/',views.index,name='index'),
     path('',views.index,name='index'),
-    path('services',views.services,name='services'),
-    path('contactus',views.contactus,name='contactus'),
+
     path('home/',views.home,name='home'),
 
     path('home/<int:product_id>',views.product_detail,name='product_detail'),
